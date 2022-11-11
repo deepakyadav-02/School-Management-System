@@ -1,0 +1,27 @@
+#footer {
+  grid-area: footer;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  padding: 4px;
+  padding-bottom: 0px;
+  bottom: 0px;
+  text-align: center;
+  background: rgb(29, 29, 100);
+  color: white;
+  padding: 20px;
+  /* position: fixed; */
+}
+.emoji {
+  /* display: inline-block; */
+  color: red;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 800px) {
+  #footer {
+    margin-top: 750px;
+    /* bottom:0px; */
+    position: relative;
+  }
+}
