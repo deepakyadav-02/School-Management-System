@@ -44,52 +44,52 @@ export const logout = () => (dispatch) => {
   localStorage.removeItem("userCred");
   dispatch({
     type: USER_LOGOUT,
-  });}
+  });
+};
 
-  export const Register =
-    (
-      name,
-     email,
-      password,
+export const Register =
+  (
+    name,
+    email,
+    password,
 
-      image
-    ) =>
-    async (dispatch) => {
-      try {
-        dispatch({
-          type: "ADMIN_REGISTER_REQUEST",
-        });
-        //we need to send headers information so we declaring it inside the config
-        const config = {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        };
-        const { data } = await axios.post(
-          "/api/login/register",
-          {
-            name,
-            email,
-            password,
-            image,
-          },
-          config
-        );
-        dispatch({
-          type: "ADMIN_REGISTER_SUCCESS",
-          payload: data,
-        });
-        console.log("succes")
-        //we are getting  the json data from our backend request so we need to convert it into the
-        //string before we save them in our local storage of our  browser
-      } catch (error) {
-        dispatch({
-          type: "ADMIN_REGISTER_FAIL",
-          payload:
-            error.response && error.response.data.message
-              ? error.response.data.message
-              : error.message,
-        });
-      }
-    };
-
+    image
+  ) =>
+  async (dispatch) => {
+    try {
+      dispatch({
+        type: "ADMIN_REGISTER_REQUEST",
+      });
+      //we need to send headers information so we declaring it inside the config
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      const { data } = await axios.post(
+        "/api/login/register",
+        {
+          name,
+          email,
+          password,
+          image,
+        },
+        config
+      );
+      dispatch({
+        type: "ADMIN_REGISTER_SUCCESS",
+        payload: data,
+      });
+      console.log("succes");
+      //we are getting  the json data from our backend request so we need to convert it into the
+      //string before we save them in our local storage of our  browser
+    } catch (error) {
+      dispatch({
+        type: "ADMIN_REGISTER_FAIL",
+        payload:
+          error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message,
+      });
+    }
+  };

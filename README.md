@@ -8,4 +8,3 @@ This is a MERN stack website which can be used for managing the school. It has a
 Login email="admin@gmail.com"
 Login password="admin"
 ```
-
