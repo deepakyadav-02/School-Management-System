@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "https://school-mgmt-backend.up.railway.app",
+  "proxy": "https://school-management-system.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
