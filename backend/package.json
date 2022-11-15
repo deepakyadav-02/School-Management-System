@@ -14,14 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upendradhamala/School-Management-System.git"
+    "url": "git+https://github.com/deepakyadav-02/School-Management-System.git"
   },
-  "author": "Upendra Dhamala",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/upendradhamala/School-Management-System/issues"
+    "url": "https://github.com/deepakyadav-02/School-Management-System/issues"
   },
-  "homepage": "https://github.com/upendradhamala/School-Management-System#readme",
+  "homepage": "https://github.com/deepakyadav-02/School-Management-System#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.6.0",
